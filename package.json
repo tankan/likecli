@@ -1,0 +1,29 @@
+{
+  "name": "likecli",
+  "version": "1.0.0",
+  "description": "like im 聊天室",
+  "scripts": {
+    "release": "pnpm changeset && pnpm version-packages && pnpm build && pnpm release:only",
+    "build": "pnpm -r --filter ./packages run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release:only": "changeset publish",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "engines": {
+    "node": "16.17.0"
+  },
+  "keywords": [
+    "likecli",
+    "webrtc"
+  ],
+  "author": "me@zengxingqi.com",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com/"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.25.0"
+  }
+}
