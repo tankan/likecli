@@ -1,7 +1,7 @@
 {
   "name": "likecli",
   "version": "1.0.0",
-  "description": "like im 聊天室",
+  "description": "likecli 工具包",
   "scripts": {
     "release": "pnpm changeset && pnpm version-packages && pnpm build && pnpm release:only",
     "build": "pnpm -r --filter ./packages run build",
